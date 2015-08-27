@@ -116,7 +116,7 @@ float:left;
       <!-- Start Jobs Panel -->
       <div class="content"> 
         <!-- ### Start Secondary Navigation ### -->
-        <div class="two-column" style="width:100%"> 
+        <div class="two-column" style="width:100%; height: 662px;"> 
             <!-- ### Start Left Side ### -->
             <div class="left">
             <div class="shadow-right"></div>
@@ -162,54 +162,54 @@ float:left;
 						<div align="left" class="cell first">
 							Site Address 
 						</div>
-						<div class="cell last cust-name bold" align="right">
-							<input name="cust-name" id="cust-name"  maxlength="200" type="text"
-								class="wid209 cust-name" />
+						<div class="cell last cust-add bold" align="right">
+							<input name="cust-add" id="cust-add"  maxlength="200" type="text"
+								class="wid209 cust-add" />
 						</div>
 						</div>
 						<div class="row odd">
 						<div align="left" class="cell first">
 							Room/Building 
 						</div>
-						<div class="cell last cust-name bold" align="right">
-							<input name="cust-name" id="cust-name"  maxlength="200" type="text"
-								class="wid209 cust-name" />
+						<div class="cell last room bold" align="right">
+							<input name="room" id="room"  maxlength="200" type="text"
+								class="wid209 room" />
 						</div>
 						</div>
 						<div class="row even">
 						<div align="left" class="cell first">
 							Survey Type 
 						</div>
-						<div class="cell last cust-name bold" align="right">
-							<input name="cust-name" id="cust-name"  maxlength="200" type="text"
-								class="wid209 cust-name" />
+						<div class="cell last type bold" align="right">
+							<input name="type" id="type"  maxlength="200" type="text"
+								class="wid209 type" />
 						</div>
 						</div>
 						<div class="row odd">
 						<div align="left" class="cell first">
 							Survey By 
 						</div>
-						<div class="cell last cust-name bold" align="right">
-							<input name="cust-name" id="cust-name"  maxlength="200" type="text"
-								class="wid209 cust-name" />
+						<div class="cell last by bold" align="right">
+							<input name="by" id="by"  maxlength="200" type="text"
+								class="wid209 by" />
 						</div>
 						</div>
 						<div class="row even">
 						<div align="left" class="cell first">
 							Survey Date 
 						</div>
-						<div class="cell last cust-name bold" align="right">
-							<input name="cust-name" id="cust-name"  maxlength="200" type="text"
-								class="wid209 cust-name" />
+						<div class="cell last data bold" align="right">
+							<input name="date" id="date"  maxlength="200" type="text"
+								class="wid209 date" />
 						</div>
 						</div>
 						<div class="row odd">
 						<div align="left" class="cell first">
 							Remarks 
 						</div>
-						<div class="cell last cust-name bold " align="right">
-							<textarea name="cust-name " id="cust-name"  row="5" column="20"
-								class=" cust-name notes75" ></textarea>
+						<div class="cell last rem bold " align="right">
+							<textarea name="rem " id="rem"  row="5" column="20"
+								class=" rem notes75" ></textarea>
 						</div>
 						</div>
 						</div>
