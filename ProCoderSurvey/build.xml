@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Vbuild-CXM" default="deploy">
+<description>
+      This script compiles/runs Web project
+</description>
+<property environment="env"/> 
+<property name="base.dir" value="."/>   
+<property name="dist.dir" value="dist"/>
+<property name="web" value="WebContent"/>    
+<property name="src.dir" value="src"/>
+<property name="target.dir" value="target"/>
+<property name="build.dir" value="build"/>
+<property name="web.dir" value="WebContent"/>
+<property name="lib.dir" value="WebContent/WEB-INF/lib"/>
+<property name="dest.file" value="CXM.war"/>
+
+
+<property name="projectName" value="Vbuild-CXM"/>
+<property name="source"  value="${sourceDir}/${dest.file}"/>
+<property name="build_date"  value="${buildDate}"/>
+<tstamp>
+      <format property="build.date" pattern="MM/dd/yyyy hh:mm aa" />
+</tstamp>
+
+<echo message="Project Name - ${projectName}"/>
+<echo message="${lib.dir}"/> 
+	 
+      <!-- Project Classpath -->
+<path id="project.classpath">
+   <fileset dir="${base.dir}/${lib.dir}" includes="**/*.jar" />
+</path>
+
+    <!--cleanup section-->
+<target name="clean">
+   <delete file="${base.dir}/${dist.dir}/${dest.file}" />
+   <delete dir="${base.dir}/${tmp}" />
+</target>
+
+<target name="build" >
+<echo message="Executing target war"/>
+      <mkdir dir="${base.dir}/${tmp}/${target.dir}" />
+      <mkdir dir="${base.dir}/${tmp}/${target.dir}/classes" />
+      <mkdir dir="${base.dir}/${dist.dir}" />
+      <!-- compile the ejb module --> 
+      <javac srcdir="${base.dir}/${src.dir}" destdir="${base.dir}/${tmp}/${target.dir}/classes"  failonerror="true">
+        <classpath>
+        <path refid="project.classpath"/>
+        </classpath>
+      </javac>
+      <echo message="Compile Successful"/>
+      <filter token="BUILD_TAG" value="${cvsTag}" />
+      <filter token="BUILD_DATE" value="${build.date}" />      
+      <echo message="BUILD_TAG: ${cvsTag}"/>
+      <echo message="BUILD_DATE: ${build.date}"/>        
+      <copy todir="${base.dir}/${tmp}/${target.dir}/classes/" filtering="true" verbose="true" overwrite="true">
+      <fileset dir="${base.dir}/${src.dir}/">
+        <include name="**/*" />
+        <exclude name="**/*.java" />
+      </fileset>
+      </copy>
+    <war destfile="${base.dir}/${dist.dir}/${dest.file}" webxml="${base.dir}/${web}/WEB-INF/web.xml" manifest="${base.dir}/${web}/META-INF/MANIFEST.MF">
+       
+         <fileset dir="${base.dir}/${web}">
+            <exclude name="**/web.xml" />
+              <exclude name="**/MANIFEST.MF" />
+              <exclude name="**/*.jar" />
+              <exclude name="**/*.java" />
+         </fileset>
+
+         <classes dir="${base.dir}/${tmp}/${target.dir}/classes"/>
+               <lib dir="${base.dir}/${lib.dir}" />
+      </war>
+	</target>
+	
+
+	 <target name="undeploy">
+	    		<echo>*********** Start unDeploying war file on SERVER1 *********** </echo>
+	    	<wldeploy
+	    	action="undeploy" verbose="true" debug="true"
+	    	 name="VBuild-CXM"
+	    	user="appdeployer" password="deployer123" 
+	    	adminurl="t3://vblvsc1lnw002.itcent.ebiz.verizon.com:6001" targets="AdminServer"     
+	    	failonerror="false" 
+
+	    	/>
+	  </target>
+	    		
+	<taskdef name="wldeploy" classname="weblogic.ant.taskdefs.management.WLDeploy" > 
+	  <classpath>  
+	  <pathelement location="/apps/opt/weblogic/weblogic103mp6/wlserver_10.3/server/lib/weblogic.jar"/> 
+	  </classpath>  
+	  </taskdef>   
+	
+	<!-- ${base.dir}/${dist.dir}/${dest.file} -->
+	
+	<target name="deploy" depends="build,undeploy">
+			    <wldeploy
+			      action="deploy" verbose="true" debug="true"
+			      name="VBuild-CXM" source="${base.dir}/${dist.dir}/${dest.file}"
+			      user="appdeployer" password="deployer123"
+			      adminurl="t3://vblvsc1lnw002.itcent.ebiz.verizon.com:6001" targets="AdminServer" />
+		</target>
+	
+		
+</project>
