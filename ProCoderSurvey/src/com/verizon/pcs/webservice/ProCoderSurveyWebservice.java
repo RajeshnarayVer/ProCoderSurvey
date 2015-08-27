@@ -2,7 +2,7 @@ package com.verizon.pcs.webservice;
 
 public class ProCoderSurveyWebservice{
 	
-
+/*
 		long strtTm = System.currentTimeMillis();
 		Response response = null;
 		logger.debug("IssueTrackerWebservice :: getJITDashBoardHeader begins: "+ strtTm);
@@ -349,4 +349,5 @@ public SupervisorJIT readXmlgetSupervisorJIT(String reqXML) throws TmServiceExce
 		 }
 		
 		return supervisorJIT;
+		*/
 	}
