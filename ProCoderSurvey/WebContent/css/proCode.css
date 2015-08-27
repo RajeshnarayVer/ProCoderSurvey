@@ -1,0 +1,175 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+.wrapper, .layout {
+    height: 100%;
+    min-width: 768px;
+}
+.layout {
+    margin: 0px auto;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -moz-box-align: stretch;
+    width: 100%;
+}
+#exp_col {
+    position: relative;
+}
+.content-primary {
+    -moz-box-flex: 1;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -moz-box-align: stretch;
+    position: relative;
+}
+.shadow-top {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 15px;
+    width: 100%;
+    background: transparent url("../images/shdT.png") repeat-x scroll 0% 0%;
+    z-index: 1;
+}
+.content-primary > .content {
+    -moz-box-flex: 1;
+    -moz-box-orient: vertical;
+    -moz-box-align: stretch;
+    position: relative;
+    display: none;
+}
+.two-column {
+    overflow: hidden;
+    display: -moz-box;
+    -moz-box-flex: 1;
+    -moz-box-orient: horizontal;
+    -moz-box-align: stretch;
+    position: relative;
+}
+.left {
+    width: 240px;
+    background: #E5E5E5 none repeat scroll 0% 0%;
+    display: -moz-box;
+    box-sizing: border-box;
+    position: relative;
+}
+.right, .content-secondary, .content-secondary > .content {
+    overflow: hidden;
+    -moz-box-flex: 1;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -moz-box-align: stretch;
+    position: relative;
+    box-sizing: border-box;
+}
+.shadow-right {
+    background: transparent url("../images/shdR.png") repeat-y scroll 0px 0px;
+    height: 100%;
+    position: absolute;
+    right: -30px;
+    top: 0px;
+    width: 30px;
+    z-index: 2;
+}
+.left-panel {
+    overflow: hidden;
+    -moz-box-flex: 1;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -moz-box-align: stretch;
+    position: relative;
+    box-sizing: border-box;
+}
+.content-area {
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -moz-box-align: stretch;
+    -moz-box-flex: 1;
+    box-sizing: border-box;
+    position: relative;
+}
+.scrollSecondary {
+    display: -moz-box;
+    -moz-box-flex: 1;
+}
+.menu-secondary-wrap {
+    background: #E5E5E5 none repeat scroll 0% 0%;
+    overflow: hidden;
+}
+.group-heading {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 50px;
+    padding-left: 15px;
+    background: transparent url("../images/group-heading-bg.png") repeat-x scroll 0% 0%;
+}
+.group-heading.lh40 {
+    line-height: 40px;
+}
+ul.menu-secondary, ul#menu-summary {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Droid Sans",Helvetica;
+    font-size: 16px;
+    font-weight: bold;
+    color: #262626;
+}
+ul.menu-secondary li, ul#menu-summary li {
+    list-style-type: none;
+    cursor: pointer;
+    height: 60px;
+    line-height: 60px;
+    padding: 0px 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: transparent url("../images/menu-secondary-normal.png") repeat-x scroll 0% 0%;
+    width: 210px;
+}
+.right, .content-secondary, .content-secondary > .content {
+    overflow: hidden;
+    -moz-box-flex: 1;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    -moz-box-align: stretch;
+    position: relative;
+    box-sizing: border-box;
+}
+.padT15 {
+    padding-top: 2px;
+}
+.scrollbar, .fresh-scrollbar {
+    -moz-box-align: stretch;
+    -moz-box-orient: vertical;
+    display: -moz-box;
+    -moz-box-flex: 1;
+}
+.context-menu {
+    display: -moz-box;
+    overflow: hidden;
+    position: relative;
+}
+.context-menu-wrap {
+    background: transparent url("../images/context-menu-bg.png") repeat-x scroll 0% 0%;
+    padding-top: 6px;
+}
+.context-menu-wrap, .menu-context-scroll-wrap {
+    height: 60px;
+    position: relative;
+    overflow: hidden;
+    font-family: "Droid Sans",Helvetica;
+    -moz-box-flex: 1;
+    display: -moz-box;
+}
+.btn-context {
+    color: #E6E7E8;
+}
+.btn-silver, .btn-dark-red, .btn-green, .btn-red, .btn-context, .btn-gray, .btn-blue {
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+}
