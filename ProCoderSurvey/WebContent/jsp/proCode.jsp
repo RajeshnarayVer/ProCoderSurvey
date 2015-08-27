@@ -5,9 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
 <meta name="viewport" content="target-densitydpi=device-dpi; width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
 
-<title>CoA CXM</title>
+<title>Site Survey</title>
 <link href="../css/jquery-ui.css" rel="stylesheet" type="text/css" />
-<link href="../css/base.css" rel="stylesheet" type="text/css" />
+<link href="../css/proCode.css" rel="stylesheet" type="text/css" />
 
 <!--[if IE]>
 <link href="../css/base-ie.css" rel="stylesheet" type="text/css" />
@@ -21,33 +21,23 @@
 
 <script type="text/javascript" src="../js/jquery.min.js"></script>
 <script type="text/javascript" src="../js/jquery-ui.js"></script>
-<script type="text/javascript" src="../js/jquery.tmpl.js"></script>
+<script type="text/javascript" src="../js/proCode.js"></script>
 <script type="text/javascript" src="../js/iscroll.js"></script>
+<script type="text/javascript" src="../js/menu.js"></script>
+<!--<script type="text/javascript" src="../js/jquery.tmpl.js"></script>
+
 <script type="text/javascript" src="../js/login.js"></script>
 <script type="text/javascript" src="../js/files-download.js"></script>
 <script type="text/javascript" src="../js/loader.js"></script>
 <script type="text/javascript" src="../js/secondary.js"></script>
-<script type="text/javascript" src="../js/menu.js"></script>
-<script type="text/javascript" src="../js/accordion.js"></script>
 <script type="text/javascript" src="../js/combo-box.js"></script>
 <script type="text/javascript" src="../js/popup.js"></script>
 <script type="text/javascript" src="../js/expcol.js"></script>
 <script type="text/javascript" src="../js/fullpage.js"></script>
 <script type="text/javascript" src="../js/buttons.js"></script>
-<script type="text/javascript" src="../js/skiplogin.js"></script>
-<script type="text/javascript" src="../js/dynamic.js"></script>
-<script type="text/javascript" src="../js/functions.js"></script>
-<script type="text/javascript" src="../js/application_2v.js"></script>
 
-<script type="text/javascript" src="../js/application.js"></script>
 
-<script type="text/javascript" src="../js/jquery.fastLiveFilter.js"></script>
-   
-<script type="text/javascript" src="../js/d3.js"></script>
-<script type="text/javascript"  src="../js/d3.tooltip.js"></script>
-<script type="text/javascript" src="../js/bar_chart.js"></script>
-<script type="text/javascript" src="../js/bar_chart_horz.js"></script>
-<!--[if IE]>
+--><!--[if IE]>
 <script type="text/javascript" src="../js/checkbox-ie.js"></script> 
 <script type="text/javascript" src="../js/ie.js"></script>
 
@@ -112,7 +102,6 @@ float:left;
 <!--Start Expand/Collapse-->
  <div id="exp_col">  
     <div id="exp_col_bar">
-        <a href="javascript:;" class="back-btn"><span>Back</span></a>
         <span id="exp_title">Site Survey</span>
     </div>
  </div>
@@ -127,7 +116,7 @@ float:left;
       <!-- Start Jobs Panel -->
       <div class="content"> 
         <!-- ### Start Secondary Navigation ### -->
-        <div class="two-column"> 
+        <div class="two-column" style="width:100%"> 
             <!-- ### Start Left Side ### -->
             <div class="left">
             <div class="shadow-right"></div>
@@ -143,20 +132,10 @@ float:left;
 <!-- ### Start Job List ### -->
                 <div class="content" id="survey-his-page">
                	
-                <div class="content-area">
+                <div class="content-area" style="width:100%">
                 <div id="scrollScroll111" class="scrollbar"> 
                     <div class="iscroll padT15" id="all_survey">
-                    	<div class="divTable oddeven cellpad15 overlayTrigger">
-					<div class="row">
-						<div align="left" class="cell first">
-							Customer Name <span class="mandatory">*</span>
-						</div>
-						<div class="cell last cust-name bold" align="right">
-							<input name="cust-name" id="cust-name"  maxlength="200" type="text"
-								class="wid209 cust-name" />
-						</div>
-						</div>
-					</div>
+                    	<div align="center">No records found</div>
                     </div>
                 </div>
                 </div>
@@ -166,10 +145,86 @@ float:left;
 				<!-- ### Start Job List ### -->
                 <div class="content" id="new-survey-page">     	
                 
-                <div class="content-area">
+                <div class="content-area" style="width:100%">
                 <div id="scrollScroll1" class="scrollbar"> 
                     <div class="iscroll padT15" id="create_new">
-                    
+                    <div class="divTable oddeven cellpad15 overlayTrigger">
+					<div class="row odd">
+						<div align="left" class="cell first">
+							Customer Name <span class="mandatory">*</span>
+						</div>
+						<div class="cell last cust-name bold" align="right">
+							<input name="cust-name" id="cust-name"  maxlength="200" type="text"
+								class="wid209 cust-name" />
+						</div>
+						</div>
+						<div class="row even">
+						<div align="left" class="cell first">
+							Site Address 
+						</div>
+						<div class="cell last cust-name bold" align="right">
+							<input name="cust-name" id="cust-name"  maxlength="200" type="text"
+								class="wid209 cust-name" />
+						</div>
+						</div>
+						<div class="row odd">
+						<div align="left" class="cell first">
+							Room/Building 
+						</div>
+						<div class="cell last cust-name bold" align="right">
+							<input name="cust-name" id="cust-name"  maxlength="200" type="text"
+								class="wid209 cust-name" />
+						</div>
+						</div>
+						<div class="row even">
+						<div align="left" class="cell first">
+							Survey Type 
+						</div>
+						<div class="cell last cust-name bold" align="right">
+							<input name="cust-name" id="cust-name"  maxlength="200" type="text"
+								class="wid209 cust-name" />
+						</div>
+						</div>
+						<div class="row odd">
+						<div align="left" class="cell first">
+							Survey By 
+						</div>
+						<div class="cell last cust-name bold" align="right">
+							<input name="cust-name" id="cust-name"  maxlength="200" type="text"
+								class="wid209 cust-name" />
+						</div>
+						</div>
+						<div class="row even">
+						<div align="left" class="cell first">
+							Survey Date 
+						</div>
+						<div class="cell last cust-name bold" align="right">
+							<input name="cust-name" id="cust-name"  maxlength="200" type="text"
+								class="wid209 cust-name" />
+						</div>
+						</div>
+						<div class="row odd">
+						<div align="left" class="cell first">
+							Remarks 
+						</div>
+						<div class="cell last cust-name bold " align="right">
+							<textarea name="cust-name " id="cust-name"  row="5" column="20"
+								class=" cust-name notes75" ></textarea>
+						</div>
+						</div>
+						</div>
+						<div class="divTable oddeven cellpad15 overlayTrigger">
+						<div class="row even" style="width:100%">
+							<p>
+							Please specify a file, or a set of files:<br>
+							<input type="file" name="files" id="files" accept="image/*" size="3" multiple value="10240">
+							</p>
+							<div id="fileList">
+							
+							</div>
+						</div>
+						</div>
+					
                         
                         
                     </div>
@@ -179,7 +234,8 @@ float:left;
                 <!-- ### Start Context Menu ### -->
                 <div class="context-menu">
                 <div class="context-menu-wrap" align="right">
-                    <a href="javascript:void(0);" onClick="submitSurvey();" class="btn-context submit-survey">
+                    <a href="javascript:void(0);" onClick="submitSurvey();" class="btn-context submit-survey" style="margin-right: 10px;
+border-radius: 10px;">
                       <span class="btn-L"></span><span class="btn-M">Submit</span><span class="btn-R"></span>
                     </a>
                         
@@ -207,30 +263,53 @@ float:left;
   
 </div>
 <!-- ### End Wrapper ### -->
-<%@ include file="pop-localmanager.jsp" %>
-<%@ include file="ewo-asigndate.jsp" %>
-<%@ include file="pop-change-tech-status.jsp" %>
-<%@ include file="pop-change-loan-to-productive.jsp" %>
-<%@ include file="tech-tpl.jsp" %>
-<%@ include file="ewos-tpl.jsp" %>
-<%-- <%@ include file="ewolist.jsp" %> --%>
-<%@ include file="pop-change-to-productive.jsp" %>
-<%@ include file="pop-filterby.jsp" %>
-<%@ include file="pop-filterby-job.jsp" %>
-<%@ include file="pop-filterby-print.jsp" %>
-<%@ include file="pop-filterby-act.jsp" %>
-<%@ include file="pop-filterby-acttype.jsp" %>
-<%@ include file="pop-filterby-actstat.jsp" %>
-<%@ include file="pop-filterby-assign.jsp" %>
-<%@ include file="pop-filterby-epm.jsp" %>
-<%@ include file="pop-sortby.jsp" %>
-<%@ include file="pop-sortby-tech.jsp" %>
-<%@ include file="summary-charts.jsp" %>
-<%@ include file="act-summary-tpl.jsp" %>
+
 <div id="Connection_fail" class="hide">Connection to server failed. Please try again</div>
 <div id="alert_nodata" class="hide">No Valid Data , Please check the Values given</div>
 <script>
-init_select();
+$(document).ready(function(){
+	$('.content-secondary > div').css('display','none');
+	$('.content-secondary #survey-his-page').css('display','block');
+});
+function switchPage(page){
+	$('.content-secondary > div').css('display','none');
+	$('.content-secondary #'+page).css('display','block');
+}
+
+var selDiv = "";
+
+document.addEventListener("DOMContentLoaded", init, false);
+
+function init() {
+	document.querySelector('#files').addEventListener('change', handleFileSelect, false);
+	selDiv = document.querySelector("#fileList");
+}
+	
+function handleFileSelect(e) {
+	
+	if(!e.target.files || !window.FileReader) return;
+
+	selDiv.innerHTML = "";
+	
+	var files = e.target.files;
+	var filesArr = Array.prototype.slice.call(files);
+	var f = '';
+	filesArr.forEach(function(i) {
+		f = i;
+		if(!f.type.match("image.*")) {
+			return;
+		}
+		
+		var reader = new FileReader();
+		reader.onload = function (e) {
+			var html = f.name + ";";
+			selDiv.innerHTML += html;				
+		};
+		reader.readAsDataURL(i); 
+		
+	});
+}
+
 </script>
 </body>
 <div id="tech-sucess" class="hide">Tech Status is updated Successfully</div>
