@@ -121,7 +121,7 @@ float:left;
             <div class="left">
             <div class="shadow-right"></div>
                 <div class="left-panel">
-                	<%@ include file="proCodeLeft.jsp" %>
+                	<%@ include file="proCoeLeft.jsp" %>
                 </div>
             </div>
             <!-- ### End Left Side ### --> 
