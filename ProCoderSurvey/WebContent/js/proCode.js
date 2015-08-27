@@ -48,7 +48,7 @@ function submitSurvey(){
 	var fileList = $('#fileList').text().split(';');
 	fileListReq = "";
 	$(fileList).each(function(f){
-		fileListReq +="<fileName>"+f+"<fileName>";
+		fileListReq +="<fileName>"+f+"</fileName>";
 	});
 	
 	var req="<createSurveyReq><name>" + $('#cust-name').val()
