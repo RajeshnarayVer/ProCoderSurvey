@@ -1,13 +1,13 @@
-package com.vogella.jersey.first.test;
+/*package com.vogella.jersey.first.test;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
 import com.vogella.jersey.first.ProBean;
 import com.vogella.jersey.first.SiteSurvey;
-
+*/
 
 public class SiteSurveyTest {
-
+/*
 	SiteSurvey ss = new SiteSurvey();
 	ProBean pb = new ProBean();
 	
@@ -70,5 +70,5 @@ public class SiteSurveyTest {
 	{
 		assertFalse("Length greater than 100", (pb.getRoom().length()>100));
 	}
-	
+	*/
 }
