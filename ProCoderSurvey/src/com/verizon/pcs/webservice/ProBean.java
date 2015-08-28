@@ -1,4 +1,4 @@
-package com.vogella.jersey.first;
+package com.verizon.pcs.webservice;
 
 public class ProBean {
 
