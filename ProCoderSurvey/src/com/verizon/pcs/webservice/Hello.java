@@ -122,7 +122,7 @@ public class Hello {
 				 	  } 
 				 	   
 				 	  String myDriver = "org.gjt.mm.mysql.Driver"; 
-				       String myUrl = "jdbc:mysql://localhost/mydb"; 
+				       String myUrl = "jdbc:mysql://113.128.161.204/mydb"; 
 				       Class.forName(myDriver); 
 				       Connection conn = DriverManager.getConnection(myUrl, "root", "mysql"); 
 				 
