@@ -384,15 +384,3 @@ a.surveyLink{
 .custom-upload{
 	display:none;
 }
-
-header1 li.selected{
-    background: transparent url("../images/menu-tertiary-selected-left.png") no-repeat scroll left top;
-}
-header1 li.selected span{
-	background: transparent url("../images/menu-tertiary-selected-right.png") no-repeat scroll right top;
-	display: block;
-	max-width: 440px;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
