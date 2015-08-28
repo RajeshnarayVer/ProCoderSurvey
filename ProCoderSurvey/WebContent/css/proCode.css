@@ -381,3 +381,6 @@ a.surveyLink{
 #survey-his-detail-page .cell{
 	text-align:center;
 }
+.custom-upload{
+	display:none;
+}
