@@ -1,4 +1,4 @@
-package com.vogella.jersey.first;
+package com.verizon.pcs.webservice;
 
 import java.io.File;
 import java.io.StringReader;

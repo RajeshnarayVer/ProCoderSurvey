@@ -1,14 +1,14 @@
-/*package com.vogella.jersey.first.test;
+package com.verizon.pcs.webservice;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
-import com.vogella.jersey.first.ProBean;
-import com.vogella.jersey.first.SiteSurvey;
-*/
+import com.verizon.pcs.webservice.ProBean;
+import com.verizon.pcs.webservice.Hello;
+
 
 public class SiteSurveyTest {
-/*
-	SiteSurvey ss = new SiteSurvey();
+
+	Hello ss = new Hello();
 	ProBean pb = new ProBean();
 	
 	@Test
@@ -70,5 +70,5 @@ public class SiteSurveyTest {
 	{
 		assertFalse("Length greater than 100", (pb.getRoom().length()>100));
 	}
-	*/
+	
 }
