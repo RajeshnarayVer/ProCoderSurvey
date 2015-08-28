@@ -72,5 +72,12 @@ public class ProBean {
 	String filename1;
 	String filename2;
 	String filename3;
+	String remarks;
+	public String getRemarks() {
+		return remarks;
+	}
+	public void setRemarks(String remarks) {
+		this.remarks = remarks;
+	}
 	
 }
