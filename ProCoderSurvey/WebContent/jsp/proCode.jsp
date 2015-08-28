@@ -18,12 +18,14 @@
 <link href="css/table-ie7.css" rel="stylesheet" type="text/css" />
 <![endif]-->
 
+<%@include file="surveyListTpl.jsp" %>
+
 <script type="text/javascript" src="../js/jquery.min.js"></script>
 <script type="text/javascript" src="../js/proCode.js"></script>
 <script type="text/javascript" src="../js/iscroll.js"></script>
 <script type="text/javascript" src="../js/menu.js"></script>
-<!--<script type="text/javascript" src="../js/jquery.tmpl.js"></script>
-
+<script type="text/javascript" src="../js/jquery.tmpl.js"></script>
+<!--
 <script type="text/javascript" src="../js/login.js"></script>
 <script type="text/javascript" src="../js/files-download.js"></script>
 <script type="text/javascript" src="../js/loader.js"></script>
@@ -88,7 +90,7 @@ float:left;
     <!-- ### Start Primary Navigation ### -->
  
     <!-- ### End Primary Navigation ### --> 
-
+<div class="header1"><span>Favorites</span><span class="span2">My Task</span><span>Site Survey</span></div>
 <!--Start Expand/Collapse-->
  <div id="exp_col">  
     <div id="exp_col_bar">
@@ -125,80 +127,8 @@ float:left;
                 <div class="content-area" style="width:100%">
                 <div id="scrollScroll111" class="scrollbar"> 
                     <div class="iscroll padT15" id="all_survey">
-                    	<div id="survey-list-detail">
                     		<div id="survey-list">
-                    			<div id="assigned-to-me-list" class="primary accordian-wrap">
-								<div class="each-accordian-wrap open-issues-wrap">
-            						<div class="accordionTitle">
-                						<div class="title issues-open-title">Open</div>
-                						<span class="ico plus">&nbsp;</span>
-            						</div>
-            
-            						<div class="accordionData"> 
-            						<div id="assig-to-me-Open-list"></div>
-            						</div></div></div>
                     		</div>
-                    		<div id="survey-detail">
-                    			<div class="divTable oddeven cellpad15 overlayTrigger">
-					<div class="row odd">
-						<div align="left" class="cell first">
-							Customer Name <span class="mandatory">*</span>
-						</div>
-						<div class="cell last cust-name bold" align="right">
-							
-						</div>
-						</div>
-						<div class="row even">
-						<div align="left" class="cell first">
-							Site Address 
-						</div>
-						<div class="cell last cust-add bold" align="right">
-							
-						</div>
-						</div>
-						<div class="row odd">
-						<div align="left" class="cell first">
-							Room/Building 
-						</div>
-						<div class="cell last room bold" align="right">
-							
-						</div>
-						</div>
-						<div class="row even">
-						<div align="left" class="cell first">
-							Survey Type 
-						</div>
-						<div class="cell last type bold" align="right">
-							
-						</div>
-						</div>
-						<div class="row odd">
-						<div align="left" class="cell first">
-							Survey By 
-						</div>
-						<div class="cell last by bold" align="right">
-							
-						</div>
-						</div>
-						<div class="row even">
-						<div align="left" class="cell first">
-							Survey Date 
-						</div>
-						<div class="cell last data bold" align="right">
-							
-						</div>
-						</div>
-						<div class="row odd">
-						<div align="left" class="cell first">
-							Remarks 
-						</div>
-						<div class="cell last rem bold " align="right">
-							
-						</div>
-						</div>
-						</div>
-                    		</div>
-                    	</div>
                     </div>
                 </div>
                 </div>
@@ -226,8 +156,13 @@ float:left;
 							Site Address 
 						</div>
 						<div class="cell last cust-add bold" align="right">
-							<input name="cust-add" id="cust-add"  maxlength="200" type="text"
-								class="wid209 cust-add" />
+							<textarea readonly name="cust-add" id="cust-add"
+								class="notes75 cust-add" ></textarea><br><br>
+								<a href="javascript:void(0);" onClick="getLocation();" class="btn-context get-loc" style="margin-right: 10px;
+border-radius: 10px;">
+                      <span class="btn-L"></span><span class="btn-M">Get Location</span><span class="btn-R"></span>
+                    </a>
+								
 						</div>
 						</div>
 						<div class="row odd">
@@ -309,6 +244,80 @@ border-radius: 10px;">
                 </div>
                 <!-- ### End Context Menu ### --> 
                 
+                </div>
+               
+               <div class="content" id="survey-map-view">
+               	<%@ include file="onMaps.jsp" %>
+               </div>
+               
+               <div class="content" id="survey-his-detail-page">
+               	
+                <div class="content-area" style="width:100%">
+                <div id="scrollScroll111" class="scrollbar"> 
+                    <div class="iscroll padT15">	
+                    			<div class="divTable oddeven cellpad15 overlayTrigger">
+					<div class="row odd">
+						<div align="left" class="cell first">
+							Customer Name
+						</div>
+						<div class="cell last cust-name1 bold" align="right">
+							
+						</div>
+						</div>
+						<div class="row even">
+						<div align="left" class="cell first">
+							Site Address 
+						</div>
+						<div class="cell last cust-add1 bold" align="right">
+							
+						</div>
+						</div>
+						<div class="row odd">
+						<div align="left" class="cell first">
+							Room/Building 
+						</div>
+						<div class="cell last room1 bold" align="right">
+							
+						</div>
+						</div>
+						<div class="row even">
+						<div align="left" class="cell first">
+							Survey Type 
+						</div>
+						<div class="cell last type1 bold" align="right">
+							
+						</div>
+						</div>
+						<div class="row odd">
+						<div align="left" class="cell first">
+							Survey By 
+						</div>
+						<div class="cell last by1 bold" align="right">
+							
+						</div>
+						</div>
+						<div class="row even">
+						<div align="left" class="cell first">
+							Survey Date 
+						</div>
+						<div class="cell last date1 bold" align="right">
+							
+						</div>
+						</div>
+						<div class="row odd">
+						<div align="left" class="cell first">
+							Remarks 
+						</div>
+						<div class="cell last rem1 bold " align="right">
+							
+						</div>
+						</div>
+						</div>
+                    	
+                    </div>
+                </div>
+                </div>
+                 
                 </div>
                
             </div>
