@@ -53,7 +53,6 @@ public class HelloTest {
 	 *
 	 * @generatedBy CodePro at 8/28/15 2:23 AM
 	 */
-	
 	@org.junit.Test
 	public void testSayHtmlHello_1()
 		throws Exception {
