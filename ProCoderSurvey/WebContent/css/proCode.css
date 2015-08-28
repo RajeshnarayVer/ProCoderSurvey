@@ -329,3 +329,55 @@ input[type="file"]{
 span#fileList{
 	font-size: 20px;
 }
+
+a.surveyLink{
+	font-family: "Droid Sans",Helvetica;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.header1{
+	height: 45px;
+	background: rgb(107, 107, 107) none repeat scroll 0% 0%;
+	padding-top: 9px;
+	text-align:center;
+}
+.header1 span{
+	margin-top: 43px;
+	color: rgb(168, 168, 168);
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.header1 span.span2{
+	padding: 435px;
+}
+
+.list-cmd {
+ background: #E6E8E8 url("../images/list-cmdbg-hover.png") repeat-x scroll 0% 0%;
+ border: 1px solid #ACACAC;
+ color: #323232;
+ font-size: 16px;
+ font-weight: bold;
+ margin: 7px 15px;
+ border-radius: 5px;
+ display: block;
+ text-decoration: none;
+ position: relative;
+ overflow: hidden;
+ min-height: 59px;
+ }
+
+.list-cmd .arw {
+ 
+ min-height: 39px;
+ }
+ 
+ .list-cmd .cell{
+ padding:10px;
+ width:230px
+ }
+#survey-his-detail-page .cell{
+	text-align:center;
+}
