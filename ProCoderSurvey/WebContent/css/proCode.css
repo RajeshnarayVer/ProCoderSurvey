@@ -47,7 +47,6 @@ html, body {
     left: 0px;
     height: 15px;
     width: 100%;
-    background: transparent url("../images/shdT.png") repeat-x scroll 0% 0%;
     z-index: 1;
 }
 .content-primary > .content {
@@ -317,4 +316,16 @@ body {
 .notes75{
 	width: 75%;
 	height: 60px;
+}
+input[type="file"]{
+	height: 35px;
+	background: rgb(212, 20, 20) none repeat scroll 0% 0%;
+	cursor: pointer;
+	font-family: "Droid Sans",Helvetica;
+	font-size: 16px;
+	font-weight: bold;
+	color: #E6E7E8;
+}
+span#fileList{
+	font-size: 20px;
 }

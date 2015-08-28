@@ -6,7 +6,6 @@
 <meta name="viewport" content="target-densitydpi=device-dpi; width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
 
 <title>Site Survey</title>
-<link href="../css/jquery-ui.css" rel="stylesheet" type="text/css" />
 <link href="../css/proCode.css" rel="stylesheet" type="text/css" />
 
 <!--[if IE]>
@@ -20,7 +19,6 @@
 <![endif]-->
 
 <script type="text/javascript" src="../js/jquery.min.js"></script>
-<script type="text/javascript" src="../js/jquery-ui.js"></script>
 <script type="text/javascript" src="../js/proCode.js"></script>
 <script type="text/javascript" src="../js/iscroll.js"></script>
 <script type="text/javascript" src="../js/menu.js"></script>
@@ -135,7 +133,71 @@ float:left;
                 <div class="content-area" style="width:100%">
                 <div id="scrollScroll111" class="scrollbar"> 
                     <div class="iscroll padT15" id="all_survey">
-                    	<div align="center">No records found</div>
+                    	<div id="survey-list-detail">
+                    		<div id="survey-list">
+                    			
+                    		</div>
+                    		<div id="survey-detail">
+                    			<div class="divTable oddeven cellpad15 overlayTrigger">
+					<div class="row odd">
+						<div align="left" class="cell first">
+							Customer Name <span class="mandatory">*</span>
+						</div>
+						<div class="cell last cust-name bold" align="right">
+							
+						</div>
+						</div>
+						<div class="row even">
+						<div align="left" class="cell first">
+							Site Address 
+						</div>
+						<div class="cell last cust-add bold" align="right">
+							
+						</div>
+						</div>
+						<div class="row odd">
+						<div align="left" class="cell first">
+							Room/Building 
+						</div>
+						<div class="cell last room bold" align="right">
+							
+						</div>
+						</div>
+						<div class="row even">
+						<div align="left" class="cell first">
+							Survey Type 
+						</div>
+						<div class="cell last type bold" align="right">
+							
+						</div>
+						</div>
+						<div class="row odd">
+						<div align="left" class="cell first">
+							Survey By 
+						</div>
+						<div class="cell last by bold" align="right">
+							
+						</div>
+						</div>
+						<div class="row even">
+						<div align="left" class="cell first">
+							Survey Date 
+						</div>
+						<div class="cell last data bold" align="right">
+							
+						</div>
+						</div>
+						<div class="row odd">
+						<div align="left" class="cell first">
+							Remarks 
+						</div>
+						<div class="cell last rem bold " align="right">
+							
+						</div>
+						</div>
+						</div>
+                    		</div>
+                    	</div>
                     </div>
                 </div>
                 </div>
@@ -145,7 +207,7 @@ float:left;
 				<!-- ### Start Job List ### -->
                 <div class="content" id="new-survey-page">     	
                 
-                <div class="content-area" style="width:100%">
+                <div class="content-area" style="width:100%;height: 580px;">
                 <div id="scrollScroll1" class="scrollbar"> 
                     <div class="iscroll padT15" id="create_new">
                     <div class="divTable oddeven cellpad15 overlayTrigger">
@@ -215,13 +277,15 @@ float:left;
 						</div>
 						<div class="divTable oddeven cellpad15 overlayTrigger">
 						<div class="row even" style="width:100%">
-							<p>
-							Please specify a file, or a set of files:<br>
+						<div class="cell">
+							<div>
+							Please specify a file, or a set of files:<br><br>
 							<input type="file" name="files" id="files" accept="image/*" size="3" multiple value="10240">
-							</p>
-							<div id="fileList">
+							<span id="fileList">
 							
+							</span>
 							</div>
+						</div>
 						</div>
 						</div>
 					
@@ -267,10 +331,7 @@ border-radius: 10px;">
 <div id="Connection_fail" class="hide">Connection to server failed. Please try again</div>
 <div id="alert_nodata" class="hide">No Valid Data , Please check the Values given</div>
 <script>
-$(document).ready(function(){
-	$('.content-secondary > div').css('display','none');
-	$('.content-secondary #survey-his-page').css('display','block');
-});
+
 function switchPage(page){
 	$('.content-secondary > div').css('display','none');
 	$('.content-secondary #'+page).css('display','block');
