@@ -127,7 +127,16 @@ float:left;
                     <div class="iscroll padT15" id="all_survey">
                     	<div id="survey-list-detail">
                     		<div id="survey-list">
-                    			
+                    			<div id="assigned-to-me-list" class="primary accordian-wrap">
+								<div class="each-accordian-wrap open-issues-wrap">
+            						<div class="accordionTitle">
+                						<div class="title issues-open-title">Open</div>
+                						<span class="ico plus">&nbsp;</span>
+            						</div>
+            
+            						<div class="accordionData"> 
+            						<div id="assig-to-me-Open-list"></div>
+            						</div></div></div>
                     		</div>
                     		<div id="survey-detail">
                     			<div class="divTable oddeven cellpad15 overlayTrigger">
