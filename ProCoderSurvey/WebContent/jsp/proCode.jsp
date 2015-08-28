@@ -13,6 +13,7 @@
 <link href="../css/inputs-ie.css" rel="stylesheet" type="text/css" />
 <link href="../css/combo-box-ie.css" rel="stylesheet" type="text/css" />
 <link href="../css/proprietary-ie.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="../css/all-ie-css.css"/>
 <![endif]-->
 <!--[if IE 7]>
 <link href="css/table-ie7.css" rel="stylesheet" type="text/css" />
@@ -144,7 +145,7 @@ float:left;
                     <div class="divTable oddeven cellpad15 overlayTrigger">
 					<div class="row odd">
 						<div align="left" class="cell first">
-							Customer Name <span class="mandatory">*</span>
+							Customer Name 
 						</div>
 						<div class="cell last cust-name bold" align="right">
 							<input name="cust-name" id="cust-name"  maxlength="200" type="text"
@@ -216,6 +217,7 @@ border-radius: 10px;">
 						<div class="cell">
 							<div>
 							Please specify a file, or a set of files:<br><br>
+							<lable for="file-upload" class="custom-upload">Browse</lable>
 							<input type="file" name="files" id="files" accept="image/*" size="3" multiple value="10240">
 							<span id="fileList">
 							
@@ -312,6 +314,16 @@ border-radius: 10px;">
 							
 						</div>
 						</div>
+						
+						<div class="row odd">
+						<div align="left" class="cell first">
+							Attachments :
+						</div>
+						<div class="cell last rem1 bold images-att" align="right">
+							
+						</div>
+						</div>
+						
 						</div>
                     	
                     </div>
