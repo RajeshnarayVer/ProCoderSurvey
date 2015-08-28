@@ -88,15 +88,7 @@ float:left;
     <!-- ### Start Primary Navigation ### -->
  
     <!-- ### End Primary Navigation ### --> 
-     <!--[if IE]>
- <div id="vexp_col">  
- <img src="../images/verizon-logo.gif"/>
-    
-          <span class="vbuild-bar"> <span>v</span>Build - Job Assignment</span>
-          <span class="empName"></span>
-    
- </div>    
-  <![endif]--> 
+
 <!--Start Expand/Collapse-->
  <div id="exp_col">  
     <div id="exp_col_bar">
