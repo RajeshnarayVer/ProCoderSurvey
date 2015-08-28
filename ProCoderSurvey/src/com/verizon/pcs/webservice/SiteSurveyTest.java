@@ -11,6 +11,7 @@ public class SiteSurveyTest {
 	Hello ss = new Hello();
 	ProBean pb = new ProBean();
 	
+	
 	@Test
 	public void checkfilename1()
 	{
