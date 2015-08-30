@@ -3,4 +3,4 @@ applications:
 - name: GDeploy  
   memory: 512M 
   host: GDeploy 
-  path: ProCoderSurvey/dist/ProCoderSurvey.war 
+  path: dist/ProCoderSurvey.war 
