@@ -10,26 +10,16 @@
 
 <path id="classpath.test">
  
-  <pathelement location="${jardir}/WEB-INF/lib/junit-4.12.jar" />
   <pathelement location="${jardir}/WEB-INF/lib/hamcrest-all-1.3.jar" />
-	<pathelement location="${jardir}/WEB-INF/lib/jersey-client.jar" />
 	<pathelement location="${jardir}/WEB-INF/lib/jersey-container-servlet.jar" />
   <pathelement location="${jardir}/WEB-INF/lib/jersey-container-servlet-core.jar" />
   <pathelement location="${jardir}/WEB-INF/lib/jersey-media-jaxb.jar" />
 	<pathelement location="${jardir}/WEB-INF/lib/javax.ws.rs-api-2.0.1" />
-	<pathelement location="${jardir}/WEB-INF/lib/jersey-server" />
-	<pathelement location="${jardir}/WEB-INF/lib/annotations-api.jar" />
 	<pathelement location="${jardir}/WEB-INF/lib/javax.annotation-api-1.2.jar" />
 	<pathelement location="${jardir}/WEB-INF/lib/javax.inject-2.4.0-b06.jar" />
 	<pathelement location="${jardir}/WEB-INF/lib/javax.servlet-api-3.0.1.jar" />
-	<pathelement location="${jardir}/WEB-INF/lib/javax.ws.rs-api-2.0.1.jar" />
 	<pathelement location="${jardir}/WEB-INF/lib/jaxb-api-2.2.7.jar" />
 	<pathelement location="${jardir}/WEB-INF/lib/jersey-client.jar" />
-	<pathelement location="${jardir}/WEB-INF/lib/jersey-common.jar" />
-	<pathelement location="${jardir}/WEB-INF/lib/jersey-container-servlet-core.jar" />
-	<pathelement location="${jardir}/WEB-INF/lib/jersey-container-servlet.jar" />
-	<pathelement location="${jardir}/WEB-INF/lib/jersey-guava-2.12.jar" />
-	<pathelement location="${jardir}/WEB-INF/lib/jersey-media-jaxb.jar" />
 	<pathelement location="${jardir}/WEB-INF/lib/jersey-server.jar" />
 	<pathelement location="${jardir}/WEB-INF/lib/jsp-api.jar" />
 	<pathelement location="${jardir}/WEB-INF/lib/junit-4.12.jar" />
