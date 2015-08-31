@@ -3,4 +3,4 @@ applications:
 - name: ProCoderSurveySept  
   memory: 512M 
   host: ProCoderSurveySept 
-  path: dist/ProCoderSurvey.war 
+  path: dist/ProCoderSurveyTemp.war 
