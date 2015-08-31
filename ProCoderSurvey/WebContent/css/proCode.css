@@ -393,7 +393,7 @@ a.surveyLink{
 	display:none;
 }
 .header1 span.selected{
-    background: transparent url("../images/menu-teritiary-selected-left.png") no-repeat scroll left top;
+   // background: transparent url("../images/menu-teritiary-selected-left.png") no-repeat scroll left top;
     padding-left: 25px;
 border-radius: 10px;
 padding-bottom: 5px;
